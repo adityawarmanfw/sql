@@ -137,10 +137,10 @@
 
 <div class="svp-code-block-wrapper">
 	<div class="svp-code-block--title">DuckDB Playground</div>
-	<div class="my-4">
+	<div class="my-4-mx-2">
 		<CodeMirror bind:value styles={cmStyle} lang={sql(sqlConfig)} />
 	</div>
-	<div class="my-4">
+	<div class="my-4-mx-2">
 		<button
 			on:click={() => {
 				execute(value);
@@ -150,15 +150,15 @@
 		>
 			Eksekusi
 		</button>
-		<span class="my-4">{status}</span>
+		<span class="my-4-mx-2">{status}</span>
 	</div>
 
 	{#await results then r}
-		<div class="my-4">
+		<div class="my-4-mx-2">
 			<div class="tabulator" use:tableAction={{ data: r.rows, columns: r.columns }} />
 		</div>
 	{:catch error}
-		<div class="my-4">
+		<div class="my-4-mx-2">
 			<p style="color: red">{error.message}</p>
 		</div>
 	{/await}
@@ -168,17 +168,17 @@
 	.tabulator {
 		margin-top: 1rem;
 		margin-bottom: 1rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
 		font-family: 'Iosevka Term SS08 Web', Consolas, 'Lucida Console', Courier, monospace;
 		font-size: 0.8em;
 	}
 
-	.my-2 {
-		margin-top: 0.5rem;
-		margin-bottom: 0.5rem;
-	}
-	.my-4 {
+	.my-4-mx-2 {
 		margin-top: 1rem;
 		margin-bottom: 1rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
 	}
 </style>
 
