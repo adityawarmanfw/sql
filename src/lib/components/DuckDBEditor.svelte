@@ -174,6 +174,6 @@
 <svelte:head>
 	<link
 		href="/css/tabulator.css"
-		rel="stylesheet"
+		type="text/css"
 	/>
 </svelte:head>
