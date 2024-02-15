@@ -4,7 +4,7 @@ import "../../chunks/Link.svelte_svelte_type_style_lang.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const fm = {
     "pageType": "md",
-    "lastUpdate": "2024/02/15 09:22:51",
+    "lastUpdate": "2024/02/15 11:01:50",
     "title": "SQL Tingkat Lanjut",
     "heroImage": "/sveltepress@3x.png",
     "tagline": "A simple, easy to use content centered site build tool with the full power of Sveltekit.",

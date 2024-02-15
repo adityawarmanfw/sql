@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import { sveltepress } from '@sveltepress/vite'
 import { defaultTheme } from '@sveltepress/theme-default'
 import sql from 'shiki/langs/sql.mjs'
-import pwa from './config/pwa'
+// import pwa from './config/pwa'
 
 const DEFAULT_SUPPORT_LANGUAGES = ['sql', 'svelte', 'sh', 'js', 'html', 'ts', 'md', 'css', 'scss']
 
@@ -60,8 +60,7 @@ const config = defineConfig({
           previousPage: 'Sebelumnya',
           nextPage: 'Selanjutnya',
           footnoteLabel: 'Catatan kaki'
-        },
-        pwa
+        }
       }),
       siteConfig: {
         title: 'Membuat Bata tanpa Lempung',

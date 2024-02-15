@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { initDB } from '$lib/playground/duckdb';
+	import { initDB } from '$lib/playground/duckdb.js';
 
 	let connProm;
 	let dbInit;
@@ -20,7 +20,7 @@
 			return {connProm, dbInit};
 		} catch (error) {
 			results = new Promise((resolve, reject) => reject(error));
-			
+
 		}
 	}
 

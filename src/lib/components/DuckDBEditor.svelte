@@ -1,5 +1,5 @@
 <script>
-	import { CodeMirror, sql, DuckDBDialect } from '$lib/playground/codemirror';
+	import { CodeMirror, sql, DuckDBDialect } from '$lib/playground/codemirror.js';
 	import { TabulatorFull as Tabulator } from 'tabulator-tables';
 
 	function transformRows(schema, rows) {
@@ -174,6 +174,6 @@
 <svelte:head>
 	<link
 		href="/css/tabulator.css"
-		type="text/css"
+		rel="stylesheet"
 	/>
 </svelte:head>

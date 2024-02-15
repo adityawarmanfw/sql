@@ -7,10 +7,10 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["android-chrome-192x192.png","android-chrome-512x512.png","css/tabulator.css","favicon.ico","manifest-dark.webmanifest","sveltepress.svg","sveltepress@3x.png","service-worker.js"]),
+	assets: new Set(["android-chrome-192x192.png","android-chrome-512x512.png","css/tabulator.css","favicon.ico","manifest-dark.webmanifest","sveltepress.svg","sveltepress@3x.png"]),
 	mimeTypes: {".png":"image/png",".css":"text/css",".webmanifest":"application/manifest+json",".svg":"image/svg+xml"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.3xDrAPJD.js","app":"_app/immutable/entry/app.iKd2azA7.js","imports":["_app/immutable/entry/start.3xDrAPJD.js","_app/immutable/chunks/entry.pNqdRus1.js","_app/immutable/chunks/scheduler.hLwqlzEk.js","_app/immutable/entry/app.iKd2azA7.js","_app/immutable/chunks/preload-helper.0HuHagjb.js","_app/immutable/chunks/scheduler.hLwqlzEk.js","_app/immutable/chunks/index.jQBLQ83-.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.1O3ZsgRq.js","app":"_app/immutable/entry/app.maKCm9T_.js","imports":["_app/immutable/entry/start.1O3ZsgRq.js","_app/immutable/chunks/entry.vn0xJr9z.js","_app/immutable/chunks/scheduler.hLwqlzEk.js","_app/immutable/entry/app.maKCm9T_.js","_app/immutable/chunks/preload-helper.0HuHagjb.js","_app/immutable/chunks/scheduler.hLwqlzEk.js","_app/immutable/chunks/index.jQBLQ83-.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),

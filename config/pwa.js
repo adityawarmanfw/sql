@@ -9,8 +9,8 @@ export default {
     manifest: {
         start_url: '/',
         scope: '/',
-        name: 'Sveltepress',
-        short_name: 'Sveltepress',
+        name: 'Membuat Bata tanpa Lempung',
+        short_name: 'SQL Lanjut',
         icons: [
             {
                 src: '/android-chrome-192x192.png',
