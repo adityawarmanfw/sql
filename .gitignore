@@ -1,5 +1,5 @@
-.svelte-kit
-.sveltepress
 node_modules
 dist
 build
+.svelte-kit
+.sveltepress
