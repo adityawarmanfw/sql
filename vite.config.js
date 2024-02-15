@@ -36,8 +36,6 @@ const config = defineConfig({
               ],
             }]
         },
-        github: 'https://github.com/Blackman99/sveltepress',
-        // logo: '/sveltepress.svg',
         preBuildIconifyIcons: {
           'vscode-icons': ['file-type-svelte', 'file-type-markdown', 'file-type-vite'],
           'logos': ['typescript-icon', 'svelte-kit'],
@@ -60,7 +58,10 @@ const config = defineConfig({
           previousPage: 'Sebelumnya',
           nextPage: 'Selanjutnya',
           footnoteLabel: 'Catatan kaki'
-        }
+        },
+        themeColor: {
+          light: '#ffffff'
+        },
       }),
       siteConfig: {
         title: 'Membuat Bata tanpa Lempung',
