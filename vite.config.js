@@ -73,7 +73,7 @@ const config = defineConfig({
       "@codemirror/view",
       "@codemirror/lang-sql",
       "codemirror",
-      "tabulator-tables"
+      // "tabulator-tables"
     ]
   }
 })

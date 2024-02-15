@@ -26,6 +26,6 @@
   "dependencies": {
     "workbox-window": "^7.0.0"
   },
-  "main": "dist/js/tabulator.js",
-  "module": "dist/js/tabulator_esm.js"
+  "main": "node_modules/tabulator-tables/dist/js/tabulator.min.js",
+  "module": "node_modules/tabulator-tables/dist/js/tabulator_esm.min.js"
 }
