@@ -150,7 +150,7 @@
 		>
 			Eksekusi
 		</button>
-		<span class="my-2">{status}</span>
+		<span class="my-4">{status}</span>
 	</div>
 
 	{#await results then r}
@@ -166,9 +166,19 @@
 
 <style lang="css">
 	.tabulator {
-		margin-top: 10px;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 		font-family: 'Iosevka Term SS08 Web', Consolas, 'Lucida Console', Courier, monospace;
 		font-size: 0.8em;
+	}
+
+	.my-2 {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	.my-4 {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
 </style>
 
