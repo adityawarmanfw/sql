@@ -1,0 +1,103 @@
+/* atkinson-hyperlegible-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Atkinson Hyperlegible';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/atkinson-hyperlegible-v11-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* atkinson-hyperlegible-italic - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Atkinson Hyperlegible';
+    font-style: italic;
+    font-weight: 400;
+    src: url('fonts/atkinson-hyperlegible-v11-latin-italic.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* atkinson-hyperlegible-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Atkinson Hyperlegible';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/atkinson-hyperlegible-v11-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* atkinson-hyperlegible-700italic - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Atkinson Hyperlegible';
+    font-style: italic;
+    font-weight: 700;
+    src: url('fonts/atkinson-hyperlegible-v11-latin-700italic.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* fira-code-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/fira-code-v22-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* hanken-grotesk-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 900;
+    src: url('fonts/hanken-grotesk-v8-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+	font-family: 'Iosevka Term SS08 Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('fonts/IosevkaTermSS08-Regular.woff2') format('woff2'), url('fonts/IosevkaTermSS08-Regular.ttf') format('truetype');
+}
+
+
+body {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-weight: 400;
+}
+
+code {
+	font-family: 'Iosevka Term SS08 Web', 'Fira Mono', monospace !important;
+	font-weight: 400;
+}
+
+
+.gradient-title {
+	font-family: 'Hanken Grotesk';
+    line-height: 115%;
+}
+
+.description {
+	font-family: 'Hanken Grotesk';
+}
+
+h1 h2 h3 {
+	font-family: 'Hanken Grotesk';
+}
+
+.header {
+    /* height: 36px; */
+}
