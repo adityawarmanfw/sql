@@ -131,10 +131,13 @@
 			minHeight: '2rem',
 			fontFamily: 'Iosevka Term SS08 Web',
 			fontSize: '0.95em'
+		},
+		'.cb': {
+			color: '#7B30D0'
 		}
 	};
 
-	let sqlConfig = { upperCaseKeywords: true, dialect: DuckDBDialect };
+	let sqlConfig = { upperCaseKeywords: false, dialect: DuckDBDialect };
 
 	let value = '';
 	let status = '';
