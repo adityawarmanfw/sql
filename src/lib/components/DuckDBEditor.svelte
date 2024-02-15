@@ -141,6 +141,7 @@
 	let connProm;
 	let dbInit;
 	let results = new Promise(() => ({}));
+	let renderedValue = value.split('\n').slice(1, -1).join('\n')
 
 	export { value, connProm, dbInit };
 </script>
@@ -149,12 +150,12 @@
 	<div class="svp-code-block--title">DuckDB Playground</div>
 	<div class="svp-code-block">
 		<div class="my-4-mx-2">
-			<CodeMirror bind:value styles={cmStyle} lang={sql(sqlConfig)} />
+			<CodeMirror bind:value={renderedValue} styles={cmStyle} lang={sql(sqlConfig)} />
 		</div>
 		<div class="my-4-mx-2">
 			<button
 				on:click={() => {
-					execute(value);
+					execute(renderedValue);
 				}}
 				title="Execute Query"
 				style=""

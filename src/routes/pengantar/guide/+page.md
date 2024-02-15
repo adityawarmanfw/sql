@@ -1,5 +1,5 @@
 ---
-title: guide
+title: Guide
 lastUpdate: 2023-10-12
 ---
 
@@ -20,4 +20,4 @@ SELECT * FROM BETWEEN AND WHERE IN ORDER BY OVER PARTITION BY
 ROWS UNBOUNDED PRECEEDING TABLE VALUES CREATE OR REPLACE MACRO TABLE
 ```
 
-<DuckDBEditor value='SELECT 1,2,3,4;' bind:connProm bind:dbInit />
+<DuckDBEditor value={`SELECT 1,2,3,4;`} bind:connProm bind:dbInit />
