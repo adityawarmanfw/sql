@@ -121,16 +121,14 @@
 
 	const cmStyle = {
 		'&': {
-			maxWidth: '100%',
-			marginBottom: '10px'
+			maxWidth: '100%'
 		},
 		'.cm-scroller': {
 			overflow: 'auto'
 		},
 		'.cm-content, .cm-gutter': {
 			minHeight: '2rem',
-			fontFamily: 'Iosevka Term SS08 Web',
-			fontSize: '0.95em'
+			fontFamily: 'Iosevka Term SS08 Web'
 		}
 	};
 
@@ -141,7 +139,7 @@
 	let connProm;
 	let dbInit;
 	let results = new Promise(() => ({}));
-	let renderedValue = value.split('\n').slice(1, -1).join('\n')
+	let renderedValue = value.split('\n').length == 1 ? value : value.split('\n').slice(1, -1).join('\n')
 
 	export { value, connProm, dbInit };
 </script>
@@ -150,7 +148,13 @@
 	<div class="svp-code-block--title">DuckDB Playground</div>
 	<div class="svp-code-block">
 		<div class="my-4-mx-2">
-			<CodeMirror bind:value={renderedValue} styles={cmStyle} lang={sql(sqlConfig)} />
+			<CodeMirror
+				bind:value={renderedValue}
+				styles={cmStyle}
+				lang={sql(sqlConfig)}
+				tabSize=4
+				basic=false
+			/>
 		</div>
 		<div class="my-4-mx-2">
 			<button
@@ -192,10 +196,6 @@
 		margin-bottom: 1rem;
 		margin-left: 0.5rem;
 		margin-right: 0.5rem;
-	}
-
-	.cm-line .cb {
-		color: #7B30D0;
 	}
 </style>
 

@@ -1,5 +1,4 @@
 import CodeMirror from "svelte-codemirror-editor";
-// import { json } from "@codemirror/lang-json";
 import { sql, SQLDialect } from "@codemirror/lang-sql";
 import { highlightWhitespace} from "@codemirror/view";
 

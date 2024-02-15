@@ -1,10 +1,10 @@
 ---
-title: SQL Tingkat Lanjut
-heroImage: /sveltepress@3x.png
-tagline: A simple, easy to use content centered site build tool with the full power of Sveltekit.
+title: Bersukaria dengan SQL, tanpa data bisnis.
+heroImage: /Rectangle.png
+tagline: Percobaan-percobaan SQL tingkat lanjut.
 features:
-  - title: Jauh dari data bisnis
-    description: "Tak ada lagi tabel orders, departments, atau products yang membosankan. Biarkan mereka bersemayam di kantor."
+  - title: Melampaui data bisnis
+    description: Tak ada lagi tabel orders, departments, atau products yang membosankan. Biarkan mereka bersemayam di kantor.
     icon:
       type: iconify
       collection: noto
@@ -12,15 +12,17 @@ features:
     link: /#
   - title: Memperlakukan SQL laiknya bahasa pemrograman
     description: "Tak sekadar perkara SELECT FROM WHERE."
-    link: /#
-  - title: Svelte in Markdown
-    description: Feel free to use svelte in markdown. Explore infinite possibilities.
-    link: /#
-  - title: Svelte in Markdown
-    description: Feel free to use svelte in markdown. Explore infinite possibilities.
     icon:
       type: iconify
       collection: carbon
-      name: tree-view-alt
+      name: sql
+    link: /#
+  - title: Koding interaktif ditenagai DuckDB
+    description: Jalankan SQL abad 21 langsung dari peramban, tak perlu instal peladen.
+    icon:
+      type: iconify
+      collection: simple-icons
+      name: duckdb
     link: /#
 ---
+
