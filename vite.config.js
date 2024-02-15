@@ -52,7 +52,7 @@ const config = defineConfig({
           'bi': ['list-nested'],
         },
         highlighter: {
-          'languages': [sql]
+          'languages': [sql] + DEFAULT_SUPPORT_LANGUAGES
         },
         i18n: {
           onThisPage: 'Di laman ini',
