@@ -77,7 +77,7 @@
 			if (results) {
 				let endTime = Date.now();
 				let executionTime = endTime - startTime;
-				status = `Kueri selesai dieksekusi dalam ${executionTime} milidetik.`;
+				status = `Kueri selesai dalam ${executionTime} milidetik.`;
 			} else {
 				status = '';
 			}
@@ -137,31 +137,33 @@
 
 <div class="svp-code-block-wrapper">
 	<div class="svp-code-block--title">DuckDB Playground</div>
-	<div class="my-4-mx-2">
-		<CodeMirror bind:value styles={cmStyle} lang={sql(sqlConfig)} />
-	</div>
-	<div class="my-4-mx-2">
-		<button
-			on:click={() => {
-				execute(value);
-			}}
-			title="Execute Query"
-			style=""
-		>
-			Eksekusi
-		</button>
-		<span class="my-4-mx-2">{status}</span>
-	</div>
+	<div class="svp-code-block">
+		<div class="my-4-mx-2">
+			<CodeMirror bind:value styles={cmStyle} lang={sql(sqlConfig)} />
+		</div>
+		<div class="my-4-mx-2">
+			<button
+				on:click={() => {
+					execute(value);
+				}}
+				title="Execute Query"
+				style=""
+			>
+				Eksekusi
+			</button>
+			<span class="my-4-mx-2">{status}</span>
+		</div>
 
-	{#await results then r}
-		<div class="my-4-mx-2">
-			<div class="tabulator" use:tableAction={{ data: r.rows, columns: r.columns }} />
-		</div>
-	{:catch error}
-		<div class="my-4-mx-2">
-			<p style="color: red">{error.message}</p>
-		</div>
-	{/await}
+		{#await results then r}
+			<div class="my-4-mx-2">
+				<div class="tabulator" use:tableAction={{ data: r.rows, columns: r.columns }} />
+			</div>
+		{:catch error}
+			<div class="my-4-mx-2">
+				<p style="color: red">{error.message}</p>
+			</div>
+		{/await}
+	</div>
 </div>
 
 <style lang="css">
