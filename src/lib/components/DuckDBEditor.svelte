@@ -135,7 +135,8 @@
 	export { value, connProm, dbInit };
 </script>
 
-<div class="border border-primary-300 rounded-lg py-2 px-4 block my-4">
+<div class="svp-code-block-wrapper">
+	<div class="svp-code-block--title">DuckDB Playground</div>
 	<div class="my-4">
 		<CodeMirror bind:value styles={cmStyle} lang={sql(sqlConfig)} />
 	</div>
