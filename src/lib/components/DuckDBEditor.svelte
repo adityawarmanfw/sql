@@ -2,6 +2,13 @@
 	import { CodeMirror, sql, DuckDBDialect } from '$lib/playground/codemirror.js';
 	import { TabulatorFull as Tabulator } from 'tabulator-tables';
 
+	function uint32ArrayToNumber(uint32Array, decimal) {
+		const combinedValue = uint32Array.reduce((acc, val, index) => {
+			return acc + val * Math.pow(2, 32 * index);
+		}, 0);
+		return combinedValue / Math.pow(10, decimal);
+	}
+
 	function transformRows(schema, rows) {
 		return rows.map((row) => {
 			const transformedRow = {};
@@ -19,6 +26,8 @@
 					transformedRow[columnName] = timestampDate.toISOString();
 				} else if (column.type === 'Interval') {
 					transformedRow[columnName] = new String(value);
+				} else if (column.type === 'Decimal') {
+					transformedRow[columnName] =  new String(uint32ArrayToNumber(value, column.type2.scale));
 				} else {
 					transformedRow[columnName] = value;
 				}
@@ -60,7 +69,8 @@
 			const schema = res.schema.fields.map((r) => ({
 				title: r.name,
 				field: r.name,
-				type: r.type.constructor[Symbol.toStringTag]
+				type: r.type.constructor[Symbol.toStringTag],
+				type2: r.type
 			}));
 
 			const transformedRows = transformRows(schema, rows);
