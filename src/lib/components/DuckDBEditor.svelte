@@ -131,9 +131,6 @@
 			minHeight: '2rem',
 			fontFamily: 'Iosevka Term SS08 Web',
 			fontSize: '0.95em'
-		},
-		'.cb': {
-			color: '#7B30D0'
 		}
 	};
 
@@ -195,6 +192,10 @@
 		margin-bottom: 1rem;
 		margin-left: 0.5rem;
 		margin-right: 0.5rem;
+	}
+
+	.cb {
+		color: #7B30D0;
 	}
 </style>
 
