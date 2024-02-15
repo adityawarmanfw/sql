@@ -10,6 +10,7 @@ const config = defineConfig({
   plugins: [
     sveltepress({
       theme: defaultTheme({
+        toggle: false,
         logo: '/sveltepress.svg',
         navbar: [
           // Add your navbar configs here
