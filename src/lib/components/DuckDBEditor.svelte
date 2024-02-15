@@ -194,7 +194,7 @@
 		margin-right: 0.5rem;
 	}
 
-	.cb {
+	.cm-line .cb {
 		color: #7B30D0;
 	}
 </style>
