@@ -138,6 +138,12 @@
 	let status = '';
 	let connProm;
 	let dbInit;
+	let isInstantiated = true;
+
+	$: if (connProm) {
+        isInstantiated = false;
+    };
+
 	let results = new Promise(() => ({}));
 	let renderedValue = value.split('\n').length == 1 ? value : value.split('\n').slice(1, -1).join('\n')
 
@@ -161,10 +167,15 @@
 				on:click={() => {
 					execute(renderedValue);
 				}}
+				disabled={isInstantiated}
 				title="Execute Query"
 				style=""
 			>
+			{#if connProm}
 				Eksekusi
+			{:else}
+				Instantiating DuckDB...
+			{/if}
 			</button>
 			<span class="my-4-mx-2">{status}</span>
 		</div>
