@@ -174,7 +174,7 @@
 			{#if connProm}
 				Eksekusi
 			{:else}
-				Instantiating DuckDB...
+				Memuat DuckDB...
 			{/if}
 			</button>
 			<span class="my-4-mx-2">{status}</span>
