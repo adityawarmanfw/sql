@@ -26,20 +26,10 @@ export default {
           title: "KLAUSA",
           collapsible: true,
           items: [
-            { title: "SELECT", to: "/isi/bagian-i/structured-query-language" },
-            { title: "FROM", to: "/isi/bagian-i/structured-query-language" },
+            { title: "SELECT", to: "" },
+            { title: "FROM", to: "" },
           ],
         },
-      ],
-    },
-  ],
-  "/tentang/": [
-    {
-      title: "Tentang",
-      collapsible: true,
-      items: [
-        { title: "Buku", to: "/tentang/buku/" },
-        { title: "Penulis", to: "/tentang/penulis/" },
       ],
     },
   ],
