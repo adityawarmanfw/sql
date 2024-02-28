@@ -13,8 +13,8 @@
     "@sveltejs/adapter-static": "^3.0.1",
     "@sveltejs/kit": "^2.0.6",
     "@sveltejs/vite-plugin-svelte": "^3.0.1",
-    "@sveltepress/theme-default": "^1.22.5",
-    "@sveltepress/vite": "^0.31.5",
+    "@sveltepress/theme-default": "^1.23.0",
+    "@sveltepress/vite": "^0.32.0",
     "@types/node": "^20.10.6",
     "svelte": "^4.2.8",
     "svelte-codemirror-editor": "^1.1.0",
@@ -25,7 +25,5 @@
   "license": "MIT",
   "dependencies": {
     "workbox-window": "^7.0.0"
-  },
-  "main": "node_modules/tabulator-tables/dist/js/tabulator.min.js",
-  "module": "node_modules/tabulator-tables/dist/js/tabulator_esm.min.js"
+  }
 }
