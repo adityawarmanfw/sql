@@ -5,18 +5,6 @@ import sql from "shiki/langs/sql.mjs";
 import navbar from "./config/navbar";
 import sidebar from "./config/sidebar";
 
-const DEFAULT_SUPPORT_LANGUAGES = [
-  "sql",
-  "svelte",
-  "sh",
-  "js",
-  "html",
-  "ts",
-  "md",
-  "css",
-  "scss",
-];
-
 const config = defineConfig({
   plugins: [
     sveltepress({
@@ -61,6 +49,7 @@ const config = defineConfig({
             end: "#3266cb",
           },
           hover: "#3266cb",
+          primary: "#3266cb",
         },
       }),
       siteConfig: {
@@ -75,7 +64,6 @@ const config = defineConfig({
       "@codemirror/view",
       "@codemirror/lang-sql",
       "codemirror",
-      "tabulator-tables",
     ],
   },
 });

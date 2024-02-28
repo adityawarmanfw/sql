@@ -7,7 +7,8 @@
     // import { TabulatorFull as Tabulator } from "tabulator-tables";
     import * as pkg from "tabulator-tables";
 
-    const { TabulatorFull: Tabulator } = pkg;
+    const { TabulatorFull } = pkg;
+    const Tabulator = TabulatorFull;
 
     function uint32ArrayToNumber(uint32Array, decimal) {
         const combinedValue = uint32Array.reduce((acc, val, index) => {
@@ -213,7 +214,7 @@
 </div>
 
 <svelte:head>
-    <link href="/css/tabulator.css" rel="stylesheet" />
+    <link href="/css/tabulator_simple.css" rel="stylesheet" />
 </svelte:head>
 
 <style lang="css">
