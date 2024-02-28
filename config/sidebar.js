@@ -10,7 +10,7 @@ export default {
         },
         {
           title: "Tentang Penulis",
-          to: "/isi/bagian-i/tentang-buku",
+          to: "/isi/bagian-i/tentang-penulis",
         },
       ],
     },
