@@ -1,5 +1,5 @@
 ---
-title: Guide
+title: FROM
 lastUpdate: 2023-10-12
 ---
 
@@ -23,13 +23,7 @@ SELECT 1,2,3
 
 <DuckDbInstantiator bind:connProm bind:dbInit />
 
-Pengantar
-
-```sql title="Test.sql"
-SELECT * FROM BETWEEN AND WHERE IN ORDER BY OVER PARTITION BY
-ROWS UNBOUNDED PRECEDING TABLE VALUES CREATE OR REPLACE MACRO TABLE
-```
-
+FROM
 
 <DuckDBEditor value={query2} bind:connProm bind:dbInit />
 

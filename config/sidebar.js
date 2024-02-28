@@ -26,8 +26,8 @@ export default {
           title: "KLAUSA",
           collapsible: true,
           items: [
-            { title: "SELECT", to: "" },
-            { title: "FROM", to: "" },
+            { title: "SELECT", to: "/isi/bagian-ii/select" },
+            { title: "FROM", to: "/isi/bagian-ii/from" },
           ],
         },
       ],
