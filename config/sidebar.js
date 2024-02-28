@@ -12,24 +12,18 @@ export default {
           title: "Tentang Penulis",
           to: "/isi/bagian-i/tentang-penulis",
         },
+        {
+          title: "Tentang SQL",
+          to: "/isi/bagian-i/structured-query-language",
+        },
       ],
     },
     {
       title: "II. Menengok Kembali",
       collapsible: true,
       items: [
-        {
-          title: "SQL: Structured Query Language",
-          to: "/isi/bagian-ii/structured-query-language",
-        },
-        {
-          title: "KLAUSA",
-          collapsible: true,
-          items: [
-            { title: "SELECT", to: "/isi/bagian-ii/select" },
-            { title: "FROM", to: "/isi/bagian-ii/from" },
-          ],
-        },
+        { title: "SELECT", to: "/isi/bagian-ii/select" },
+        { title: "FROM", to: "/isi/bagian-ii/from" },
       ],
     },
   ],

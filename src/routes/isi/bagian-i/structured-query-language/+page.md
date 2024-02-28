@@ -1,5 +1,5 @@
 ---
-title: SQL: Structured Query Language
+title: "SQL: Structured Query Language"
 lastUpdate: 2023-10-12
 ---
 

@@ -4,8 +4,4 @@ export default [
     title: "Buku",
     to: "/isi/bagian-i/tentang-buku",
   },
-  {
-    title: "Tentang Penulis",
-    to: "/isi/bagian-i/tentang-penulis",
-  },
 ];
