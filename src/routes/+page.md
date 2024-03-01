@@ -25,4 +25,3 @@ features:
       name: duckdb
     link: /#
 ---
-

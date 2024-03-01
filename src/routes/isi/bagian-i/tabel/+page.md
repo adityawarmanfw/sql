@@ -3,9 +3,8 @@ title: Tabel
 lastUpdate: 2024-03-01
 ---
 
-## Tabel
-* Tabel adalah satu-satunya struktur data dalam sistem basis data relasional. Tidak ada yang lain.
-* Di dalam tabel, terdapat kolom dan baris.
+* Tabel adalah satu-satunya struktur data dalam basis data SQL. Tidak ada yang lain.
+* Di dalam tabel terdapat kolom dan baris.
 * Kolom diurutkan dari kiri ke kanan.
 * Baris disimpan tanpa urutan (**unordered** bag of rows).
 * Dalam pembuatan tabel, tiap kolom ditentukan nama dan tipe datanya.

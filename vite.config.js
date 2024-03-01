@@ -54,7 +54,7 @@ const config = defineConfig({
       }),
       siteConfig: {
         title: "Membuat Bata tanpa Lempung",
-        description: "Antologi kueri SQL sonder data bisnis",
+        description: "Kumpulan kueri SQL sonder data bisnis",
       },
     }),
   ],
