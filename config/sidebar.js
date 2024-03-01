@@ -1,28 +1,25 @@
 export default {
   "/isi/": [
     {
-      title: "I. Pengantar",
+      title: "Prakata",
       items: [
         {
           title: "Tentang Buku",
-          to: "/isi/bagian-i/tentang-buku/",
+          to: "/isi/prakata/tentang-buku/",
         },
         {
           title: "Tentang Penulis",
-          to: "/isi/bagian-i/tentang-penulis/",
-        },
-        {
-          title: "Tentang SQL",
-          to: "/isi/bagian-i/tentang-sql/",
+          to: "/isi/prakata/tentang-penulis/",
         },
       ],
     },
     {
-      title: "II. Menengok Kembali",
+      title: "I. Menengok Kembali",
       collapsible: true,
       items: [
-        { title: "SELECT", to: "/isi/bagian-ii/select/" },
-        { title: "FROM", to: "/isi/bagian-ii/from/" },
+        { title: "SQL", to: "/isi/bagian-i/sejarah-sql/" },
+        { title: "SELECT", to: "/isi/bagian-i/select/" },
+        { title: "FROM", to: "/isi/bagian-i/from/" },
       ],
     },
   ],
