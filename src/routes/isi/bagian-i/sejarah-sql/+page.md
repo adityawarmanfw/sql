@@ -49,7 +49,7 @@ GET w (a.nama): ∃ m((a.kelemahan = w.nama) ∧ (a.serangan > w.serangan))
 
 Ray dan Don terkesan dengan betapa ringkasnya kueri yang ditawarkan Ted untuk menjawab pertanyaan yang kompleks. Namun, pada saat yang sama, mereka percaya bahwa sangat mungkin untuk merancang bahasa relasional yang lebih mudah dari itu, yang dapat diakses oleh pengguna tanpa pelatihan formal dalam matematika atau pemrograman komputer.
 
-Percobaan mereka dalam bereksperimen menciptakan bahasa tingkat tinggi ini dimulai dengan SQUARE (Specifying Queries As Relational Expressions). Kemudian pada 1973 mereka pindah ke Laboratorium Riset San Jose untuk bergabung ke proyek System R dan mengembangkan bahasa kueri baru, [SEQUEL](http://www.almaden.ibm.com/cs/people/chamberlin/sequel-1974.pdf) (Structured English Query Language). Sebulan setelah terbitnya makalah SEQUEL, Ray meninggal di usia 26 tahun karena aneurisma otak.
+Percobaan mereka dalam bereksperimen menciptakan bahasa tingkat tinggi ini dimulai dengan SQUARE (Specifying Queries As Relational Expressions). Kemudian pada 1973 mereka pindah ke Laboratorium Riset San Jose untuk bergabung ke proyek System R dan mengembangkan bahasa kueri baru, [SEQUEL](https://dl.acm.org/doi/10.1145/800296.811515) (Structured English Query Language). Sebulan setelah terbitnya makalah SEQUEL, Ray meninggal di usia 26 tahun karena aneurisma otak.
 
 Pertanyaan yang sama seperti di atas, dalam bahasa SEQUEL menjadi:
 
