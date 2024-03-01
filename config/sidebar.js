@@ -18,6 +18,7 @@ export default {
       collapsible: true,
       items: [
         { title: "SQL", to: "/isi/bagian-i/sejarah-sql/" },
+        { title: "Tabel", to: "/isi/bagian-i/tabel/" },
         { title: "SELECT", to: "/isi/bagian-i/select/" },
         { title: "FROM", to: "/isi/bagian-i/from/" },
       ],
